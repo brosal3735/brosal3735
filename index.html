@@ -78,7 +78,33 @@
 
       <section id="contact">
          <h2>Contact</h2>
-         <p>You can reach me via email or on my GitHub profile.</p>
+         <p>You can reach me via this form or on my GitHub profile.</p>
+
+         <form id="contact-form" class="contact-form" action="#" method="post" novalidate>
+            <div class="form-row">
+               <div class="field">
+                  <label for="name">Your Name</label>
+                  <input type="text" id="name" name="name" required>
+               </div>
+
+               <div class="field">
+                  <label for="email">Email Address</label>
+                  <input type="email" id="email" name="email" required>
+               </div>
+            </div>
+
+            <div class="field">
+               <label for="subject">Subject</label>
+               <input type="text" id="subject" name="subject">
+            </div>
+
+            <div class="field">
+               <label for="message">Message</label>
+               <textarea id="message" name="message" rows="5"></textarea>
+            </div>
+
+            <input type="submit" value="Send Message">
+         </form>
       </section>
    </main>
 
